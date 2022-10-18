@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconectar" href="https://fonts.googleapis.com">
+    <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <link href="enlace rel="preconectar href="https://fonts.googleapis.com">
+    <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? family= Bebas+Neue &familia = Abierto + Sans & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+
+    <title>Webflix</title>
+</head>
+    <body>
+        <header>
+            <div class="contenedor">
+            <h2 class="logotipo">Codo a Codo 4.0</h2>
+                <nav>
+                    <a href="#"class="activo">Inicio</a>
+                    <a href="#">Programas</a>
+                    <a href="#">Películas</a>
+                    <a href="#">Más Recientes</a>
+                    <a href="#">Mi lista</a>
+                </nav>
+            </div>
+        </header>
+
+    <main>              |
+         <div class="pelicula-principal">
+            <div class="contenedor">
+            <h3 class="titulo">Interstellar</h3>
+            <p class="descripcion">
+            Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje
+            interestelar.
+            </p>
+            <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
+            <button role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
+            </div>
+        </div>
+<!--Acá se coloca el carrusel-->
+        <div class="peliculas-recomendadas contenedor">
+            <div class="contenedor-titulo-controles">
+                <h3>Películas Recomendadas</h3>
+                <div class="indicadores"></div>
+                <!--<button></button>
+                <button></button> se le da style css pero agrego con js-->
+            </div>   
+            <div class="contenedor-principal">
+                <button role="button" id="flecha-izquierda" class="flecha-izquierda" ><i class="fas fa-angle-left"></i></button>
+
+            <div class="contenedor-carousel"> <!--esta fila tiene un scroll, va atener movimi con js-->
+                <div class="carousel">
+                  <div class="pelicula">
+                    <a href="#"><img src="img/Avatar.jpg" alt="Avatar"></a></div>
+                    <div class="pelicula">
+                    <a href="#"><img src="img/Batman.jpg" alt="Batman"></a></div>
+                    <div class="pelicula">
+                    <a href="#"><img src="img/Lilo.jpg" alt="Lilo"></a></div>
+                    <div class="pelicula">
+                    <a href="#"><img src="img/Maverick.jpg" alt="Maverick"></a></div>
+                    <div class="pelicula">
+                    <a href="#"><img src="img/Minions.jpg" alt="Minions"></a></div>
+                    <div class="pelicula">
+                    <a href="#"><img src="img/Pinocho.jpg" alt="Pinocho"></a></div>
+                    <div class="pelicula">
+                    <a href="#"><img src="img/Ready Player One.jpg" alt="Ready Player One"></a></div>              
+                </div>
+            </div>
+                <button role="button" id="flecha-derecha" class="flecha-derecha" ><i class="fas fa-angle-right"></i></button>
+                
+            </div>
+        </div>
+    </main>
+
+    
+    <!--Acá van los script-->
+    <script src="https://kit.fontawesome.com/7ebb4f40f5.js" crossorigin="anonymous"></script>
+    <script src="fontawesome/js/jquery.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="js/index.js"></script>
+
+   
+</body>
+</html>

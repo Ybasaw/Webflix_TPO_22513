@@ -15,8 +15,17 @@ body{
 
 .contenedor {
     width: 90%;       /*quedan 10 %, 5 a la der y 5 a la izq*/
-    margin:auto
+    margin:auto;
     
+}
+
+.contenedor_QS {
+    color: #fff;
+    width: 70%;
+    margin:auto;
+    background-color: #E50914;
+    padding: 1.6em;
+    border-radius: 1.6em;
 }
 
 header {
@@ -36,7 +45,7 @@ header .logotipo {       /*google font*/
     font-size: 40px;
 }
 
-header nav a {
+header nav a{
 color: #AAA; 
 text-decoration: none;
 margin-right: 20px;
@@ -225,6 +234,9 @@ header nav a.activo{
         }
         .pelicula-principal .descripcion {
             max-width: 100%;
+        }
+        .contenedor_QS{
+            width: 90%;
         }
 
 .peliculas-recomendadas .contenedor-carousel {

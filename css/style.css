@@ -16,6 +16,7 @@ body{
 .contenedor {
     width: 90%;       /*quedan 10 %, 5 a la der y 5 a la izq*/
     margin:auto
+    
 }
 
 header {
@@ -51,17 +52,33 @@ header nav a.activo{
    font-size: 16px;
    min-height: 40.62em; /*medida mínima a relativa*/
    color: #fff; 
-   background: linear-gradient(rgba(0, 0, 0, .50)0% rgb(0, 0, 0, .50) 100%), url(../img/interstellar.jpg);
    background-position: center center;
    background-size: cover; 
    margin-bottom: 3.12em;
    display: flex;
-   align-items: end;
+   align-items: end;  
 }
+
+#interstellar{
+    background-image: url(../img/interstellar.jpg);   
+}
+#avatar{background-image: url(../img/Avatar.jpg);}
+#batman{background-image: url(../img/Batman.jpg);}
+#lilo{background-image: url(../img/Lilo.jpg);}
+#maverick{background-image: url(../img/Maverick.jpg);}
+#minions{background-image: url(../img/Minions.jpg);}
+#pinocho{background-image: url(../img/Pinocho.jpg);}
+#ready{background-image: url(../img/Ready\ Player\ One.jpg);}
 
 .pelicula-principal .contenedor {
     margin: 0 auto;
+    padding-left: 1em;
+    padding-top: 0.6em;
     margin-bottom: 6.25em;
+    filter: none;
+    filter: brightness(100%);
+    background: linear-gradient(90deg, rgba(2,0,36,0.6) 0%, rgba(0,0,0,0.3) 100%);
+
 }
 
 .pelicula-principal .titulo {
@@ -88,6 +105,7 @@ header nav a.activo{
  cursor: pointer;   
  transition: .3s ease all; /*para todas las propiedades*/
  font-size: 1.12em;
+ 
 }
 
 .pelicula-principal .boton:hover {
@@ -97,6 +115,11 @@ header nav a.activo{
 
 .pelicula-principal .boton i{
     margin-right: 1.25em;
+}
+
+.iframe{
+    width: 100%;
+    height: 100%;
 }
 /*--------------------contenedor título y controles-------------*/
 .contenedor-titulo-controles {

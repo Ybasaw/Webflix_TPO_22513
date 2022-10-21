@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css">
 
     <title>Webflix - Lilo</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
     <body>
         <header>
@@ -30,12 +31,20 @@
 
     <main>              |
          <div id="lilo" class="pelicula-principal">
-            <div class="contenedor">
-            <h3 class="titulo">Lilo, Lilo, cocodrilo</h3>
-            <p class="descripcion">
+            <div  class="contenedor">
+                <div id="video_yt">
+                    <button onclick="ocultar_contenedor('block' , 'none');" class="btn-cierre">X</button>                
+                    <iframe src="https://www.youtube.com/embed/TITv1TNi5mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+				</div>
+                
+            <div id="para"><h3 class="titulo">Lilo, Lilo, cocodrilo</h3>
+                <p class="descripcion">
                 Cuando la familia Primm se muda a Nueva York, su hijo adolescente Josh lucha por adaptarse a su nueva escuela y nuevos amigos. Todo eso cambia cuando descubre a Lilo, un cocodrilo cantante, a quien le gusta darse baños, el caviar y la buena música viviendo en el ático de su nueva casa. Los dos se convierten en mejores amigos, pero cuando la existencia de Lilo se ve amenazada por su malvado vecino Mr. Grumps, los Primm deberán aliarse con el carismático dueño de Lilo, Hector P. Valenti, para mostrar al mundo que la familia puede surgir de los lugares más inesperados y que no hay nada malo con un gran cocodrilo cantante con una personalidad aún mayor. Adaptación del libro infantil homónimo sobre un cocodrilo que vive en Nueva York. En versión original, el protagonista tendrá la voz del cantante Shawn Mendes.            </p>
-            <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-            <button role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
+            
+                <button onclick="ocultar_contenedor('none' , 'block');" id="reproducir_btn1" role="button" class="boton"><i class="fas fa-play"></i>Trailer</button>
+                <button onclick="changeColor('red');" id="info_btn" role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
+            </div>
             </div>
         </div>
 <!--Acá se coloca el carrusel-->

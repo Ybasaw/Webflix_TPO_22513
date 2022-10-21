@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconectar" href="https://fonts.googleapis.com">
     <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
     <link href="enlace rel="preconectar href="https://fonts.googleapis.com">
     <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2? family= Bebas+Neue &familia = Abierto + Sans & display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
-    <title>Webflix - Maverick</title>
+    <title>Webflix</title>
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
     <body>
@@ -20,32 +21,32 @@
             <div class="contenedor">
             <h2 class="logotipo">Codo a Codo 4.0</h2>
                 <nav>
-                    <a href="../index.html"class="activo">Inicio</a>
+                    <a href="index.html"class="activo">Inicio</a>
                     <a href="#">Programas</a>
                     <a href="#">Películas</a>
-                    <a href="#">Quienes somos</a>
-                    <a href="quienesSomos.html" class="activo">Quienes somos</a>
+                    <a href="prueba.html">pruebas</a>
+                    <a href="HTML/quienesSomos.html" class="activo">Quienes somos</a>
                 </nav>
             </div>
         </header>
 
-    <main>              |
-         <div id="maverick" class="pelicula-principal">
+    <main>              
+        <div id="interstellar" class="pelicula-principal">
+            
             <div  class="contenedor">
                 <div id="video_yt">
                     <button onclick="ocultar_contenedor('block' , 'none');" class="btn-cierre">X</button>                
                     <iframe src="https://www.youtube.com/embed/TITv1TNi5mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 
-				</div>
-                
-            <div id="para"><h3 class="titulo">Top Gun: Maverick</h3>
-                <p class="descripcion">
-                Después de más de treinta años de servicio como uno de los mejores aviadores de la Armada, Pete "Mavericks" Mitchel (Tom Cruise) se encuentra donde siempre quiso estar: superando los límites como un valiente piloto de pruebas y esquivando el ascenso de rango, que no le dejaría volar emplazándolo en tierra. Cuando es destinado a la academia de Top Gun con el objetivo de entrenar a los pilotos de élite para realizar una peligrosa misión en territorio enemigo, Maverick se encuentra allí con el joven teniente Bradley Bradshaw (Miles Teller), el hijo de su difunto amigo "Goose". (FILMAFFINITY)            </p>
+            <div id="para"><h3 class="titulo">Interstellar</h3>
+                <p class="descripcion">Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.</p>                
             
                 <button onclick="ocultar_contenedor('none' , 'block');" id="reproducir_btn1" role="button" class="boton"><i class="fas fa-play"></i>Trailer</button>
                 <button onclick="changeColor('red');" id="info_btn" role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
             </div>
             </div>
+
         </div>
 <!--Acá se coloca el carrusel-->
         <div class="peliculas-recomendadas contenedor">
@@ -61,19 +62,26 @@
             <div class="contenedor-carousel"> <!--esta fila tiene un scroll, va atener movimi con js-->
                 <div class="carousel">
                     <div class="pelicula">
-                        <a href="../HTML/avatar.html"><img src="../img/Avatar.jpg" alt="Avatar"></a></div>
-                        <div class="pelicula">
-                        <a href="../HTML/batman.html"><img src="../img/Batman.jpg" alt="Batman"></a></div>
-                        <div class="pelicula">
-                        <a href="../HTML/lilo.html"><img src="../img/Lilo.jpg" alt="Lilo"></a></div>
-                        <div class="pelicula">
-                        <a href="../HTML/maverick.html"><img src="../img/Maverick.jpg" alt="Maverick"></a></div>
-                        <div class="pelicula">
-                        <a href="../HTML/minions.html"><img src="../img/Minions.jpg" alt="Minions"></a></div>
-                        <div class="pelicula">
-                        <a href="../HTML/pinocho.html"><img src="../img/Pinocho.jpg" alt="Pinocho"></a></div>
-                        <div class="pelicula">
-                        <a href="../HTML/readyPlayerOne.html"><img src="../img/Ready Player One.jpg" alt="Ready Player One"></a></div>              
+                        <a href="HTML/avatar.html"><img src="img/Avatar.jpg" alt="Avatar" target="pelis"></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="HTML/batman.html"><img src="img/Batman.jpg" alt="Batman" target="pelis"></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="HTML/lilo.html"><img src="img/Lilo.jpg" alt="Lilo" target="pelis"> </a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="HTML/maverick.html"><img src="img/Maverick.jpg" alt="Maverick" target="pelis"></a>
+                     </div>
+                    <div class="pelicula">
+                        <a href="HTML/minions.html"><img src="img/Minions.jpg" alt="Minions" target="pelis"></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="HTML/pinocho.html"><img src="img/Pinocho.jpg" alt="Pinocho" target="pelis"></a>
+                    </div>
+                    <div class="pelicula">
+                        <a href="HTML/readyPlayerOne.html"><img src="img/Ready Player One.jpg" alt="Ready Player One" target="pelis"></a>
+                    </div>              
                 </div>
             </div>
                 <button role="button" id="flecha-derecha" class="flecha-derecha" ><i class="fas fa-angle-right"></i></button>
@@ -82,13 +90,15 @@
         </div>
     </main>
 
-    
     <!--Acá van los script-->
     <script src="https://kit.fontawesome.com/7ebb4f40f5.js" crossorigin="anonymous"></script>
     <script src="fontawesome/js/jquery.js"></script>
     <script src="fontawesome/js/all.min.js"></script>
-    <script src="../js/index.js"></script>
-
-   
+    <script src="js/index.js"></script>     
+     
+    
 </body>
 </html>
+
+
+

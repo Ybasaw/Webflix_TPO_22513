@@ -69,3 +69,18 @@ peliculas.forEach((pelicula) => {
 fila.addEventListener('mouseleave', () => {
 	peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
 });
+
+function ocultar_contenedor(pri,seg) {
+    var elem = document.getElementById('para');
+    elem.style.display = pri;
+    
+    var elem2 = document.getElementById('video_yt');
+    elem2.style.display = seg;
+
+ }
+ /*
+ function ocultar_video(newColor2) {
+    var elem = document.getElementById('video_yt');
+    elem.style.display = newColor2;
+ } 
+ */

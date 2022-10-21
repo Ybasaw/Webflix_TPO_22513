@@ -15,6 +15,7 @@
 
 
     <title>Webflix</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
     <body>
         <header>
@@ -24,7 +25,7 @@
                     <a href="index.html"class="activo">Inicio</a>
                     <a href="#">Programas</a>
                     <a href="#">Películas</a>
-                    <a href="#">Quienes somos</a>
+                    <a href="prueba.html">pruebas</a>
                     <a href="HTML/quienesSomos.html" class="activo">Quienes somos</a>
                 </nav>
             </div>
@@ -32,14 +33,16 @@
 
     <main>              
          <div id="interstellar" class="pelicula-principal">
-            <div class="contenedor">
-            <h3 class="titulo">Interstellar</h3>
-            <p class="descripcion">
-            Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje
-            interestelar.
-            </p>
-            <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-            <button role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
+            <div  class="contenedor">
+                <div id="video_yt">
+                    <button onclick="ocultar_contenedor('block' , 'none');" class="btn-cierre">X</button>                
+                    <iframe  width="560" height="315" src="https://www.youtube.com/embed/TITv1TNi5mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <div id="para"><h3 class="titulo">Interstellar</h3>
+                <p class="descripcion">Narra las aventuras de un grupo de exploradores que hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.</p>
+                <button onclick="ocultar_contenedor('none' , 'block');" id="reproducir_btn1" role="button" class="boton"><i class="fas fa-play"></i>Trailer</button>
+                <button onclick="changeColor('red');" id="info_btn" role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
+            </div>
             </div>
         </div>
 <!--Acá se coloca el carrusel-->

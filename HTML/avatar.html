@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css">
 
     <title>Webflix - Avatar</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
     <body>
         <header>
@@ -30,12 +31,20 @@
 
     <main>              |
          <div id="avatar" class="pelicula-principal">
-            <div class="contenedor">
-            <h3 class="titulo">Avatar</h3>
-            <p class="descripcion">
+            <div  class="contenedor">
+                <div id="video_yt">
+                    <button onclick="ocultar_contenedor('block' , 'none');" class="btn-cierre">X</button>                
+                    <iframe src="https://www.youtube.com/embed/TITv1TNi5mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+				</div>
+                
+            <div id="para"><h3 class="titulo">Avatar</h3>
+                <p class="descripcion">
                 Año 2154. Jake Sully (Sam Worthington), un ex-marine condenado a vivir en una silla de ruedas, sigue siendo, a pesar de ello, un auténtico guerrero. Precisamente por ello ha sido designado para ir a Pandora, donde algunas empresas están extrayendo un mineral extraño que podría resolver la crisis energética de la Tierra. Para contrarrestar la toxicidad de la atmósfera de Pandora, se ha creado el programa Avatar, gracias al cual los seres humanos mantienen sus conciencias unidas a un avatar: un cuerpo biológico controlado de forma remota que puede sobrevivir en el aire letal. Esos cuerpos han sido creados con ADN humano, mezclado con ADN de los nativos de Pandora, los Na'vi. Convertido en avatar, Jake puede caminar otra vez. Su misión consiste en infiltrarse entre los Na'vi, que se han convertido en el mayor obstáculo para la extracción del mineral. Pero cuando Neytiri, una bella Na'vi (Zoe Saldana), salva la vida de Jake, todo cambia: Jake, tras superar ciertas pruebas, es admitido en su clan. Mientras tanto, los hombres esperan los resultados de la misión de Jake. (FILMAFFINITY)            </p>
-            <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-            <button role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
+            
+                <button onclick="ocultar_contenedor('none' , 'block');" id="reproducir_btn1" role="button" class="boton"><i class="fas fa-play"></i>Trailer</button>
+                <button onclick="changeColor('red');" id="info_btn" role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
+            </div>
             </div>
          </div>
          <!--Acá se coloca el carrusel-->

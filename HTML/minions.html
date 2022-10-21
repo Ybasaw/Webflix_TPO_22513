@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css">
 
     <title>Webflix - Minions</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
 </head>
     <body>
         <header>
@@ -30,13 +31,22 @@
 
     <main>              |
          <div id="minions" class="pelicula-principal">
-            <div class="contenedor">
-            <h3 class="titulo">Minions</h3>
-            <p class="descripcion">
+            <div  class="contenedor">
+                <div id="video_yt">
+                    <button onclick="ocultar_contenedor('block' , 'none');" class="btn-cierre">X</button>                
+                    <iframe src="https://www.youtube.com/embed/TITv1TNi5mI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+				</div>
+                
+            <div id="para"><h3 class="titulo">Minions</h3>
+                <p class="descripcion">
                 La historia de Los Minions se remonta al principio de los tiempos. Empezaron siendo organismos amarillos unicelulares que evolucionaron a través del tiempo, poniéndose siempre al servicio de los amos más despreciables. Ante su incapacidad para mantener a esos amos – desde el T. Rex a Napoleón –, los Minions acaban encontrándose solos y caen en una profunda depresión. Sin embargo, uno de ellos, llamado Kevin, tiene un plan. Acompañado por el rebelde Stuart y el adorable Bob, emprende un emocionante viaje para conseguir una jefa a quien servir, la terrible Scarlet Overkill. Pasarán de la helada Antártida, a la ciudad de Nueva York en los años sesenta, para acabar en el Londres de la misma época, donde deberán enfrentarse al mayor reto hasta la fecha: salvar a la raza Minion de la aniquilación. (FILMAFFINITY)            </p>
-            <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-            <button role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
+            
+                <button onclick="ocultar_contenedor('none' , 'block');" id="reproducir_btn1" role="button" class="boton"><i class="fas fa-play"></i>Trailer</button>
+                <button onclick="changeColor('red');" id="info_btn" role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
             </div>
+            </div>
+
         </div>
 <!--Acá se coloca el carrusel-->
         <div class="peliculas-recomendadas contenedor">

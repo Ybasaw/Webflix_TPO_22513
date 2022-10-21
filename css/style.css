@@ -69,15 +69,29 @@ header nav a.activo{
 }
 
 #interstellar{
-    background-image: url(../img/interstellar.jpg);   
+    background-image: url(../img/interstellar.jpg);
 }
-#avatar{background-image: url(../img/Avatar.jpg);}
-#batman{background-image: url(../img/Batman.jpg);}
-#lilo{background-image: url(../img/Lilo.jpg);}
-#maverick{background-image: url(../img/Maverick.jpg);}
-#minions{background-image: url(../img/Minions.jpg);}
-#pinocho{background-image: url(../img/Pinocho.jpg);}
-#ready{background-image: url(../img/Ready\ Player\ One.jpg);}
+#avatar{
+    background-image: url(../img/Avatar.jpg);
+}
+#batman{
+    background-image: url(../img/Batman.jpg);
+}
+#lilo{
+    background-image: url(../img/Lilo.jpg);
+}
+#maverick{
+    background-image: url(../img/Maverick.jpg);
+}
+#minions{
+    background-image: url(../img/Minions.jpg);
+}
+#pinocho{
+    background-image: url(../img/Pinocho.jpg);
+}
+#ready{
+    background-image: url(../img/Ready\ Player\ One.jpg);
+}
 
 .pelicula-principal .contenedor {
     margin: 0 auto;
@@ -126,10 +140,7 @@ header nav a.activo{
     margin-right: 1.25em;
 }
 
-.iframe{
-    width: 100%;
-    height: 100%;
-}
+
 /*--------------------contenedor título y controles-------------*/
 .contenedor-titulo-controles {
     display: flex;
@@ -218,6 +229,37 @@ header nav a.activo{
     vertical-align: top;
 }
 
+#video_yt{
+    display: none;
+    height: 0;
+	overflow: hidden;
+	padding-bottom: 50%;
+	padding-top: 2em;
+	position: relative;
+}
+#video_yt iframe{
+    height: 80%;
+	left: 2em;
+	position: absolute;
+	top: 2em;
+	width: 80%;
+}
+
+.btn-cierre {
+	font-size: 1em;
+	font-weight: bold;
+	color: #ffffff;
+	border-radius: .8em;
+	letter-spacing: 2px;
+	background-color: #E91E63; 
+	padding: .25em .4em; 
+	position: fixed;
+	top: 1.7em;
+	left: 2.0em;
+	z-index: 99;
+    display:block;
+}
+
 /*----------------------------@media queries----------------------*/
 @media screen and (max-width: 800px) {
     header .logotipo {
@@ -239,17 +281,31 @@ header nav a.activo{
             width: 90%;
         }
 
-.peliculas-recomendadas .contenedor-carousel {
-    overflow: visible; /*propiedad /efecto para que no se corte la imágen*/
-}        
-.peliculas-recomendadas .contenedor-carousel .carousel {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /*plantilla de 3 colum, con el tamaño de una fracción*/
-    gap: 20px; /*espacio entre cada elemento*/
-}
-.peliculas-recomendadas .indicadores,
-.peliculas-recomendadas .flecha-izquierda, /*parte responsive de flechas*/
-.peliculas-recomendadas .flecha-derecha {
-    display: none;
-}
+        .peliculas-recomendadas .contenedor-carousel {
+            overflow: visible; /*propiedad /efecto para que no se corte la imágen*/
+        }        
+        .peliculas-recomendadas .contenedor-carousel .carousel {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /*plantilla de 3 colum, con el tamaño de una fracción*/
+            gap: 20px; /*espacio entre cada elemento*/
+        }
+        .peliculas-recomendadas .indicadores,
+        .peliculas-recomendadas .flecha-izquierda, /*parte responsive de flechas*/
+        .peliculas-recomendadas .flecha-derecha {
+            display: none;
+        }
+        #video_yt{
+            padding-bottom: 60%;
+            padding-top: .3em;
+        }
+        #video_yt iframe{
+            height: 100%;
+            left: .2em;
+            top: .2em;
+            width: 100%;
+        }
+        .btn-cierre{
+            top: .1em;
+	        left: .3em;
+        }
 }

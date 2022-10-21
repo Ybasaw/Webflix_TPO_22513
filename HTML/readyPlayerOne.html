@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../fontawesome/css/fontawesome.min.css">
 
     <title>Webflix - Ready Player One</title>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    
 </head>
     <body>
         <header>
@@ -30,12 +32,19 @@
 
     <main>              |
          <div id="ready" class="pelicula-principal">
-            <div class="contenedor">
-            <h3 class="titulo">Ready Player One</h3>
-            <p class="descripcion">
-                Año 2045. Wade Watts es un adolescente al que le gusta evadirse del cada vez más sombrío mundo real a través de una popular utopía virtual a escala global llamada "Oasis". Un día, su excéntrico y multimillonario creador muere, pero antes ofrece su fortuna y el destino de su empresa al ganador de una elaborada búsqueda del tesoro a través de los rincones más inhóspitos de su creación. Será el punto de partida para que Wade se enfrente a jugadores, poderosos enemigos corporativos y otros competidores despiadados, dispuestos a hacer lo que sea, tanto dentro de "Oasis" como del mundo real, para hacerse con el premio. (FILMAFFINITY)            </p>
-            <button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-            <button role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
+            <div  class="contenedor">
+                <div id="video_yt">
+                    <button onclick="ocultar_contenedor('block' , 'none');" class="btn-cierre">X</button>                
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QxVvk-OuJb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            <div id="para">
+                <h3 class="titulo">Ready Player One</h3>
+                <p class="descripcion">
+                    Año 2045. Wade Watts es un adolescente al que le gusta evadirse del cada vez más sombrío mundo real a través de una popular utopía virtual a escala global llamada "Oasis". Un día, su excéntrico y multimillonario creador muere, pero antes ofrece su fortuna y el destino de su empresa al ganador de una elaborada búsqueda del tesoro a través de los rincones más inhóspitos de su creación. Será el punto de partida para que Wade se enfrente a jugadores, poderosos enemigos corporativos y otros competidores despiadados, dispuestos a hacer lo que sea, tanto dentro de "Oasis" como del mundo real, para hacerse con el premio. (FILMAFFINITY)            </p>
+            
+                <button onclick="ocultar_contenedor('none' , 'block');" id="reproducir_btn1" role="button" class="boton"><i class="fas fa-play"></i>Trailer</button>
+                <button onclick="changeColor('red');" id="info_btn" role="button" class="boton"><i class="fas fa-info-circle"></i>Mas información</button>
+            </div>
             </div>
         </div>
 <!--Acá se coloca el carrusel-->
